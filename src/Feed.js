@@ -25,9 +25,10 @@ class Feed extends Component {
 		);
 		console.log(this.state.checkboxes.business);
 		return (
-			<div className="flex-container">
-				<div>
+			<div className="row">
+				<div className="col-sm-2">
 					Select Category:
+					<br/><br/>
 					<form onSubmit={this.handleFormSubmit}>
 						{this.createCheckboxes()}
 						<div>
@@ -37,7 +38,7 @@ class Feed extends Component {
 						</div>
 					</form>
 				</div>
-				<div>
+				<div className="col-sm-10">
 					<ul>{articlesPreviews}</ul>
 				</div>
 			</div>

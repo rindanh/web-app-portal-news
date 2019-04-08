@@ -42,7 +42,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Header/>
         <Switch>
           <Route exact path="/" render={ (props) => <Feed articles= {this.state.articles} />}/>

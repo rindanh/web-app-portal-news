@@ -9,14 +9,21 @@ class Preview extends Component {
 		titleShortened = titleShortened.split("--").join("-").toLowerCase();
 		const str = titleShortened.split(".com").join("-").toLowerCase();
 		return(
-			<div className = "container">
+			<div className="container">
 				<li>
-					<img src={this.props.articlesPreview.urlToImage} alt="image preview" className="column-1"></img>
-					<div className="title">
-						<h3><Link to={str}>{ this.props.articlesPreview.title }</Link></h3>
+					<div className="row">
+						<div className="col-sm-4">
+							<img className="img-responsive" src={this.props.articlesPreview.urlToImage} alt="image preview"></img>
+						</div>
+						<div className="col-sm-8">
+							<div className="title">
+								<h3><Link to={str}>{ this.props.articlesPreview.title }</Link></h3>
+							</div>
+							<div className="description">{ this.props.articlesPreview.description }</div>
+						</div>
 					</div>
-					<div className="description">{ this.props.articlesPreview.description }</div>
 				</li>
+				<br/>
 				<br/>
 			</div>
 		);

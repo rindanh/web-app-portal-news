@@ -1,4 +1,5 @@
-.Header {
+.header {
 	text-align: center;
-	font-family: "georgia"
+	font-family: "georgia";
+	padding-bottom:20px;
 }

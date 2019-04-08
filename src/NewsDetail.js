@@ -35,7 +35,8 @@ class NewsDetail extends Component {
 					<h2>{a.title}</h2>
 					<div>{formatDate(a.publishedAt)}</div>
 					<img src={a.urlToImage} alt="image preview"></img>
-					<p>{a.content}</p>
+					<br/>
+					<p><br/>{a.content}</p>
 					<div>oleh: {a.author}</div>
 				</div> 
 			:
@@ -43,7 +44,7 @@ class NewsDetail extends Component {
 			}
 		)
 		return(
-			<div>
+			<div className="container">
 				{article}
 			</div>
 		)
