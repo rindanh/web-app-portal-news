@@ -1,3 +1,9 @@
+# WEB APP PORTAL TOP HEADLINES NEWS FROM INDONESIA
+
+API fetched from [News API](https://newsapi.org)
+
+Oleh: Rinda Nur Hafizha
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
